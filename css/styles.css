@@ -48,6 +48,13 @@ hr {
 
 a {
     color: #40514E;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5F6F52;
 }
 
 .top-cloud {
@@ -128,4 +135,10 @@ a {
     background-image: -o-linear-gradient(top, #76885B, #627254);
     background-image: linear-gradient(to bottom, #76885B, #627254);
     text-decoration: none;
+  }
+
+  .copyright {
+    color: #12372A;
+    font-size: 0.75em;
+    padding: 20px;
   }
