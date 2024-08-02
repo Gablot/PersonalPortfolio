@@ -4,53 +4,71 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BINI Aiah</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" href="./favicon.ico">
     </head>
     <body>
         <div class="nav-bar">
-            <button class="favorite styled">HOME</button>
-            <button class="favorite styled">WORK</button>
-            <button class="favorite styled">PROJECT</button>
-            <button class="favorite styled">CONTACT</button>
+            <button class="nav-bar-element home" onclick="window.location.href='#hero-section'">HOME</button>
+            <button class="nav-bar-element work" onclick="window.location.href='#work-section'">WORK</button>
+            <button class="nav-bar-element project" onclick="window.location.href='#personal-project'">PROJECT</button>
+            <button class="nav-bar-element contact" onclick="window.location.href='#contact-form'">CONTACT</button>
         </div>
-        <div class="hero-section">
-            <h6>Hi! I'm</h6>
-            <h1>AIAH<h1>
-            <h3>SIMPLE.</h3>
-            <h3>HUMBLE.</h3>
-            <h3>DEVELOPER.</h3>
-            <img src="./images/aiah_profile.jpg" alt="An Image of Aiah">
+        <div id="hero-section">
+            <div class="profile-text">
+                <h6>Hi! I'm</h6>
+                <h1>AIAH</h1>
+                <h3>SIMPLE.</h3>
+                <h3>HUMBLE.</h3>
+                <h3>DEVELOPER.</h3>
+            </div>
+            <img id="profile-picture" src="./images/aiah_profile.jpg" alt="An Image of Aiah">
         </div>
-        <div class="work-section">
-            <h6>Work Experience</h6>
-            <h6>2023-NOW</h6>
-            <h6>Technical Consultant at CBTW Banking Technology Solutions</h6>
-            <h6>2022-2023</h6>
-            <h6>Software Engineer at Ducen</h6>
+        <div id="work-section">
+            <table class="work-exp-table">
+                <thead>
+                  <tr>
+                    <th><h6><strong>Work Experience</strong></h6></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><h6>2023-NOW</h6></td>
+                    <td><h6>Technical Consultant at CBTW<br>Banking Technology Solutions</h6></td>
+                  </tr>
+                  <tr>
+                    <td><h6>2022-2023</h6></td>
+                    <td><h6>Software Engineer at Ducen</h6></td>
+                  </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="work-section">
-          <h3>PERSONAL PROJECTS</h3>
-          <img src="./images/pageant.jpg" alt="An Image of Aiah in a Pageant">
-          <img src="./images/graduation.jpg" alt="An Image of Aiah's graduation">
-          <img src="./images/actress.png" alt="An Image of Aiah as an actress">
-          <img src="./images/coming-soon.png" alt="An Image of Aiah in a Pageant">
+        <div id="personal-project">
+            <h3>PERSONAL PROJECTS</h3>
+            <div class="personal-projects-div">
+                <img class="perosonal-project-images" src="./images/pageant.jpg" alt="An Image of Aiah in a Pageant">
+                <img class="perosonal-project-images" src="./images/graduation.jpg" alt="An Image of Aiah's graduation">
+                <img class="perosonal-project-images" src="./images/actress.png" alt="An Image of Aiah as an actress">
+                <img class="perosonal-project-images" src="./images/coming-soon.png" alt="An Image of Aiah in a Pageant">
+            </div>
         </div>
-        <div class="work-section">
-            <form action="mailto:khylecarabio@gmail.com" method="post" enctype="text/plain">
+        <div id="contact-form">
+            <form class="contact-form" action="mailto:khylecarabio@gmail.com" method="post" enctype="text/plain">
                 <h3>Let's Connect!</h3>
                 <input type="text" id="name" name="userName" required placeholder="Name..."/>
                 <input type="email" id="email" name="userEmail" required placeholder="Email..."/>
                 <input type="text" id="subject" name="userSubject" required placeholder="Subject..."/>
-                <textarea type="text" id="name" name="userMsg" rows="10" cols="30" required placeholder="Message..."></textarea>
+                <textarea type="text" id="name" name="userMsg" rows="10" cols="24" required placeholder="Message..."></textarea>
                 <input type="submit" name="submit ">
             </form>
         </div>
-        <div class="bottom-container">
+        <div id="bottom-container">
             <div class="top-container-content">
                 <a class="footer-link" href="https://www.linkedin.com/in/khyle-anthony-carabio-727322201/">LinkedIn</a>
-                <a class="footer-link" href="https://www.instagram.com/carabiokhylecarabio/">Instagram</a>
                 <a class="footer-link" href=https://github.com/Gablot>GitHub</a>
-                <p class="copyright">©2024 Khyle Carabio.</p>
+                <a class="footer-link" href="https://www.instagram.com/carabiokhylecarabio/">Instagram</a>
             </div>
+            <p class="copyright">©2024 Khyle Carabio.</p>
         </div>      
     </body>
 </html>
